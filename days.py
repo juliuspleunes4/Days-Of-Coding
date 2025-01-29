@@ -44,13 +44,26 @@ def getal_waarde():
 # getal_waarde()
 
 
-
-
 """
 Day 4: Schrijf een Python-programma dat de gebruiker vraagt om een getal, en vervolgens toont of het getal een veelvoud is van 5.
 """
+def veelvoud_getal():
+    gebruiker = input("Geef een getal: ")
+    gebruiker = int(gebruiker)
+    if gebruiker % 5 == 0:
+        print(f"{gebruiker} is WEL een veelvoud van 5!")
+    else:
+        print(f"{gebruiker} is NIET een veelvoud van 5!")
+
+
+veelvoud_getal()
 
 
 """
 Day 5: Schrijf een Python-programma dat de gebruiker vraagt om een woord, en vervolgens dat woord omdraait en toont.
 """
+def woord_draaier():
+    woord = input("")
+
+
+# woord_draaier()
