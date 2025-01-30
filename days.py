@@ -56,14 +56,21 @@ def veelvoud_getal():
         print(f"{gebruiker} is NIET een veelvoud van 5!")
 
 
-veelvoud_getal()
+# veelvoud_getal()
 
 
 """
 Day 5: Schrijf een Python-programma dat de gebruiker vraagt om een woord, en vervolgens dat woord omdraait en toont.
 """
 def woord_draaier():
-    woord = input("")
+    woord = input("Geef een woord: ")
+    print(woord[::-1])
 
 
 # woord_draaier()
+
+
+
+"""
+Day 6: Write a Python program that asks the user for a sentence and then counts how many words are in the sentence.
+"""
