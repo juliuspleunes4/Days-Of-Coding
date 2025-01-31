@@ -74,3 +74,11 @@ def woord_draaier():
 """
 Day 6: Write a Python program that asks the user for a sentence and then counts how many words are in the sentence.
 """
+def woorden_per_zin():
+    zin = input("Geef een zin: ")
+    z = zin.split()
+    print(len(z))
+
+
+# woorden_per_zin()
+    
