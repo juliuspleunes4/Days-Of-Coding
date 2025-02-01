@@ -82,3 +82,17 @@ def woorden_per_zin():
 
 # woorden_per_zin()
     
+
+
+
+"""
+Day 7: Write a Python program that asks the user for a word and checks if it is a palindrome 
+"""
+def palindrome():
+    user = input("Geef een woord: ").lower()
+    if user[::-1] == user:
+        print(f"{user} is WEL een Palindrome!")
+    else:
+        print(f"{user} is GEEN Palindrome!")
+
+# palindrome()
