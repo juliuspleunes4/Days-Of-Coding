@@ -96,3 +96,24 @@ def palindrome():
         print(f"{user} is GEEN Palindrome!")
 
 # palindrome()
+
+
+
+"""
+Day 8: Write a Python program that asks the user for a number and prints the multiplication table (up to 10) for that number.
+"""
+def multiplication():
+    zs = input("Geef een getal: ")
+    z = int(zs)
+    print(f"{z} * 1 = {z * 1}")
+    print(f"{z} * 2 = {z * 2}")
+    print(f"{z} * 3 = {z * 3}")
+    print(f"{z} * 4 = {z * 4}")
+    print(f"{z} * 5 = {z * 5}")
+    print(f"{z} * 6 = {z * 6}")
+    print(f"{z} * 7 = {z * 7}")
+    print(f"{z} * 8 = {z * 8}")
+    print(f"{z} * 9 = {z * 9}")
+    print(f"{z} * 10 = {z * 10}")
+
+multiplication()
