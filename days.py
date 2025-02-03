@@ -116,4 +116,19 @@ def multiplication():
     print(f"{z} * 9 = {z * 9}")
     print(f"{z} * 10 = {z * 10}")
 
-multiplication()
+# multiplication()
+
+
+
+"""
+Day 9: Write a Python program that asks the user for a number and then prints the factorial of that number.
+"""
+import math
+
+def factorial():
+    zs = input("Geef een getal: ")
+    s = int(zs)
+    z = math.factorial(s)
+    print(f"De factorial van {zs} is: {z}")
+
+# factorial()
