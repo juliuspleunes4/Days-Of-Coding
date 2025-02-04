@@ -132,3 +132,24 @@ def factorial():
     print(f"De factorial van {zs} is: {z}")
 
 # factorial()
+
+
+
+"""
+Day 10: Write a Python program that asks the user for a number and checks if it is a prime number (a number greater than 1 that is only divisible by 1 and itself).
+"""
+def prime_number():
+    z = input("Geef een getal: ")
+    zs = int(z)
+    
+    if zs <= 1:
+        print(f"{zs} is NOT a prime number!")
+        return
+    
+    for i in range(2, zs):
+        if zs % i == 0:
+            print(f"{zs} is NOT a prime number!")
+            return
+    print(f"{zs} IS a prime number!")
+
+# prime_number()
