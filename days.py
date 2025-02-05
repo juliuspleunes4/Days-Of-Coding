@@ -153,3 +153,54 @@ def prime_number():
     print(f"{zs} IS a prime number!")
 
 # prime_number()
+
+
+
+"""
+Day 11: Write a Python program that generates a random number between 1 and 100 and asks the user to guess it. The program should give hints if the guess is too high or too low.
+"""
+import random
+
+def random_number():
+    goofy_ahh = random.randint(1, 100)
+    while True:
+        hoi = input("Geef een random getal tussen de 1 en 100: ")
+        blehh = int(hoi)
+        if blehh == goofy_ahh:
+            print(f"Gefeliciteerd! Het was inderdaad {goofy_ahh}")
+            break
+        if blehh > goofy_ahh:
+            print("Te hoog!")
+        else:
+            print("Te laag!")
+
+# random_number()
+    
+
+"""
+Day 11: Write a Python program that generates a random number between 1 and 100 and asks the user to guess it. The program should give hints if the guess is too high or too low.
+"""
+import random
+
+def random_number_count():
+    goofy_ahh = random.randint(1, 10)
+    global count
+    while True:
+        count = 0
+        hoi = input("Geef een random getal tussen de 1 en 10: ")
+        blehh = int(hoi)
+        if count == 5 and blehh != goofy_ahh:
+            print(f"Helaas! Je pogingen zijn op. Het juiste getal was {blehh}")
+            break
+        if blehh == goofy_ahh:
+            print(f"Gefeliciteerd! Het was inderdaad {goofy_ahh}")
+            break
+        if blehh > goofy_ahh:
+            print("Te hoog!")
+            count += 1
+        else:
+            print("Te laag!")
+            count += 1
+        
+
+random_number_count()
