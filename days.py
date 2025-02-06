@@ -177,30 +177,15 @@ def random_number():
 # random_number()
     
 
-"""
-Day 11: Write a Python program that generates a random number between 1 and 100 and asks the user to guess it. The program should give hints if the guess is too high or too low.
-"""
-import random
 
-def random_number_count():
-    goofy_ahh = random.randint(1, 10)
-    global count
-    while True:
-        count = 0
-        hoi = input("Geef een random getal tussen de 1 en 10: ")
-        blehh = int(hoi)
-        if count == 5 and blehh != goofy_ahh:
-            print(f"Helaas! Je pogingen zijn op. Het juiste getal was {blehh}")
-            break
-        if blehh == goofy_ahh:
-            print(f"Gefeliciteerd! Het was inderdaad {goofy_ahh}")
-            break
-        if blehh > goofy_ahh:
-            print("Te hoog!")
-            count += 1
-        else:
-            print("Te laag!")
-            count += 1
-        
+"""
+Day 12: Write a Python program that takes a list of numbers as input and prints the largest number in the list.
+"""
+def largest_number():
+    zs = input("Geef een lijst getallen (voorbeeld: 1 3 8 20 7): ")
+    gesplit = list(map(int, zs.split()))
+    gesplit.sort()
+    ding = gesplit[-1]
+    print(f"Grootste getal = {ding}")
 
-random_number_count()
+largest_number()
