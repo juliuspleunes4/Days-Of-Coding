@@ -188,4 +188,23 @@ def largest_number():
     ding = gesplit[-1]
     print(f"Grootste getal = {ding}")
 
-largest_number()
+# largest_number()
+
+
+
+
+
+"""
+Day 13: Write a Python program that removes all duplicate numbers from a list while keeping the original order.
+"""
+def duplicates_remover():
+    list = [1, 5, 4, 5, 7, 2, 7, 6]
+    leeg = []
+    for i in list:
+        if i not in leeg:
+            leeg.append(i)
+    print(leeg)
+
+
+
+duplicates_remover()
