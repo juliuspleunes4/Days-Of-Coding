@@ -207,4 +207,18 @@ def duplicates_remover():
 
 
 
-duplicates_remover()
+# duplicates_remover()
+
+
+
+"""
+Day 14: Write a Python program that finds the second largest number in a list of numbers.
+"""
+def second_largest():
+    list = [1, 3, 2, 8]
+    list.sort()
+    list.reverse()
+    zs = list[1]
+    print(zs)
+
+second_largest()
