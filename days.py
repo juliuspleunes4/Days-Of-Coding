@@ -221,4 +221,23 @@ def second_largest():
     zs = list[1]
     print(zs)
 
-second_largest()
+# second_largest()
+
+
+
+"""
+Day 15: Write a Python program that checks if two strings are anagrams (contain the same letters in a different order, like "listen" and "silent").
+"""
+def anagram_checker():
+    str1 = "Listen"
+    str2 = "Silent"
+
+    bla = str1.lower()
+    bluh = str2.lower()
+
+    if sorted(bla) == sorted(bluh):
+        print("Anagram!")
+    else:
+        print("GEEN Anagram!")
+        
+anagram_checker()
