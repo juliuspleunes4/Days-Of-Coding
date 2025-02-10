@@ -240,4 +240,19 @@ def anagram_checker():
     else:
         print("GEEN Anagram!")
         
-anagram_checker()
+# anagram_checker()
+
+
+
+"""
+Day 16: Write a Python program that finds the most frequent element in a list.
+"""
+def most_frequent_element():
+    nums = [1, 3, 7, 1, 3, 7, 7, 2, 5, 2, 5, 5, 5, 5, 5]
+    print(max(set(nums), key=nums.count))
+
+
+most_frequent_element() 
+
+    
+
