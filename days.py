@@ -252,7 +252,22 @@ def most_frequent_element():
     print(max(set(nums), key=nums.count))
 
 
-most_frequent_element() 
+# most_frequent_element() 
 
     
+
+
+"""
+Day 17: Write a Python program that finds the longest word in a sentence given by the user.
+"""
+def longest_word():
+    user_input = input("Geef een string: ")
+    gesplit = user_input.split()
+    grootste = ""
+    for word in gesplit:
+        if len(word) >= len(grootste):
+            grootste = word
+    print(grootste)
+
+longest_word()
 
