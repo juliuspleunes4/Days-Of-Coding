@@ -269,5 +269,20 @@ def longest_word():
             grootste = word
     print(grootste)
 
-longest_word()
+# longest_word()
 
+
+
+
+"""
+Day 18: Write a Python program that counts how many vowels (a, e, i, o, u) are in a given sentence.
+"""
+def vowels():
+    z = "Hallo, ik ben Julius!"
+    leeg = []
+    for letter in z:
+        if letter in ['a', 'e', 'i', 'o', 'u']:
+            leeg.append(letter)
+    print(len(leeg))
+
+vowels()
