@@ -285,4 +285,20 @@ def vowels():
             leeg.append(letter)
     print(len(leeg))
 
-vowels()
+# vowels() 
+
+
+
+
+"""
+Day 19: Write a Python program that takes a list of numbers and returns a new list with only the even numbers.
+"""
+def even_numbers():
+    number = [3, 12, 7, 8, 15, 23, 42, 17, 19, 29, 10, 6]
+    z = []
+    for num in number:
+        if num % 2 == 0:
+            z.append(num)
+    print(z)
+
+even_numbers()
