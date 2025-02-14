@@ -301,4 +301,21 @@ def even_numbers():
             z.append(num)
     print(z)
 
-even_numbers()
+# even_numbers()
+
+
+
+
+"""
+Day 20: Write a Python program that takes a list of numbers and returns a new list where each number is squared.
+"""
+def list_squared():
+    list = [2, 5, 8, 3, 7, 12, 15, 6]
+    z = []
+    for item in list:
+        item = item ** 2
+        z.append(item)
+
+    print(z)
+
+list_squared()
