@@ -334,7 +334,7 @@ def reverse_words_og():
         empty.append(i)
     print(*empty)
 
-reverse_words_og()
+# reverse_words_og()
 
 
 
@@ -343,3 +343,12 @@ reverse_words_og()
 """
 Day 22: Write a Python program that removes all punctuation from a given sentence.
 """
+def punctuation():
+    z = "Hallo. Ik ben Julius."
+    empty = ""
+    for char in z:
+        if char not in '.':
+            empty += char
+    print(empty)
+
+punctuation()
