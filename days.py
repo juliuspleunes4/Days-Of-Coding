@@ -318,4 +318,28 @@ def list_squared():
 
     print(z)
 
-list_squared()
+# list_squared()
+
+
+
+"""
+Day 21: Write a Python program that reverses the words in a given sentence while keeping their original order.
+"""
+def reverse_words_og():
+    sentence = "Hallo, ik ben Julius!"
+    empty = []
+    z = sentence.split()
+    for i in z:
+        i = i[::-1]
+        empty.append(i)
+    print(*empty)
+
+reverse_words_og()
+
+
+
+
+
+"""
+Day 22: Write a Python program that removes all punctuation from a given sentence.
+"""
