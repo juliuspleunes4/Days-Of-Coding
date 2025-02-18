@@ -351,4 +351,27 @@ def punctuation():
             empty += char
     print(empty)
 
-punctuation()
+# punctuation()
+
+
+
+
+
+"""
+Day 23: Write a Python program that capitalizes the first letter of every word in a given sentence.
+"""
+def capitalisation():
+    user = input("Geef een zin: ")
+    z = [word.capitalize() for word in user.split()]
+    print(*z)
+
+capitalisation()
+
+
+
+
+
+"""
+Day 24: Write a Python program that finds the common elements between two lists.
+"""
+
