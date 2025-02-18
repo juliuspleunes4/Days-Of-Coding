@@ -365,7 +365,7 @@ def capitalisation():
     z = [word.capitalize() for word in user.split()]
     print(*z)
 
-capitalisation()
+# capitalisation()
 
 
 
@@ -374,4 +374,15 @@ capitalisation()
 """
 Day 24: Write a Python program that finds the common elements between two lists.
 """
+def common():
+    list1 = [1, 2, 3, 4, 5]
+    list2 = [3, 4, 5, 6, 7]
+    empty = []
+    for i in list2:
+        if i in list1:
+            empty.append(i)
+    print(empty)
+
+common()
+
 
