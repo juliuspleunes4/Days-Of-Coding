@@ -4,6 +4,11 @@ Gedurende het jaar zal de moeilijkheid van beginner tot geavanceerd gaan!
 """
 
 
+# ==============================
+# Start
+# ==============================
+
+
 """
 Day 1: Schrijf een Python-programma dat een getal van de gebruiker vraagt, en vervolgens het kwadraat van dat getal berekent en toont.
 """
@@ -383,6 +388,27 @@ def common():
             empty.append(i)
     print(empty)
 
-common()
+# common()
 
 
+
+
+"""
+Day 25: Write a Python program that finds the intersection (common elements) of three lists.
+"""
+def intersection():
+    list1 = [1, 2, 3, 4, 5]
+    list2 = [3, 4, 5, 6, 7]
+    list3 = [4, 5, 6, 7, 8]
+    empty = []
+    new = []
+    for i in list2:
+        if i in list1:
+            empty.append(i)
+    for i in list3:
+        if i in empty:
+            new.append(i)
+    print(new)
+    
+
+intersection()    
