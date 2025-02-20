@@ -411,4 +411,30 @@ def intersection():
     print(new)
     
 
-intersection()    
+# intersection()
+
+
+
+
+"""
+Day 26: Write a Python program that merges two sorted lists into a single sorted list without using sort().
+"""   
+def merge_sorted_lists(list1, list2):
+    merged_list = []
+    i = 0  
+    j = 0  
+
+    while i < len(list1) and j < len(list2):
+        if list1[i] < list2[j]:
+            merged_list.append(list1[i])
+            i += 1
+        else:
+            merged_list.append(list2[j])
+            j += 1
+
+    merged_list.extend(list1[i:])
+    merged_list.extend(list2[j:])
+
+    print(merged_list)
+
+merge_sorted_lists([1, 3, 5, 7], [2, 4, 6, 8])
